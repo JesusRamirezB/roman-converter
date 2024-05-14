@@ -1,0 +1,73 @@
+/* Main container */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#errorMessage {
+    color: red;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Card styling */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.card h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card strong {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+}
