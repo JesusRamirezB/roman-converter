@@ -1,27 +1,19 @@
-# RomanNumbers
+## Roman to Decimal Conversion
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+This Angular project allows users to convert Roman numerals to decimal numbers. It provides a simple user interface where users can input a Roman numeral, and the app will convert it to its corresponding decimal value. The app also keeps track of previous conversions in a list.
 
-## Development server
+### Features:
+- **Conversion Form:** Users can input a Roman numeral in a text field and submit it for conversion.
+- **Validation:** The app validates the input to ensure it contains only valid Roman numeral characters (I, V, X, L, C, D, M).
+- **Conversion Logic:** Roman numerals are converted to decimal using a custom function that follows the Roman numeral rules.
+- **History:** Previous conversions are displayed in a list, showing the Roman numeral input and its corresponding decimal output.
+- **Remove Conversion:** Users can remove a conversion from the history list.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Technologies Used:
+- **Angular:** The frontend framework used to build the user interface and handle user interactions.
+- **TypeScript:** The programming language used for the Angular components and logic.
+- **HTML/CSS:** Used for structuring the UI and styling the components.
+- **Angular Forms:** Used for handling form input and validation.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Usage:
+To use the app, simply enter a valid Roman numeral in the input field and click the "Submit" button. The app will convert the numeral to decimal and display it in the history list. You can remove a conversion from the history list by clicking the "X" button on the corresponding card.
