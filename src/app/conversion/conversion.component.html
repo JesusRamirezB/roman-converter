@@ -3,19 +3,20 @@
     <form (ngSubmit)="onSubmit(romanNum)" #romanNum="ngForm">
         <div>
             <label for="roman">Roman input</label>
-            <input type="text" id="roman" placeholder="Enter roman" ngModel name="roman" required
+            <input type="text" id="roman" placeholder="Enter roman number" ngModel name="roman" required
                 oninput="this.value = this.value.toUpperCase()">
-            <small *ngIf="invalidInput" id="errorMessage">
-                Please enter a valid Roman numeral (I, V, X, L, C, D, M)
-            </small>
 
 
         </div>
         <button [disabled]="!romanNum.valid" type="submit" id="submitButton">Submit</button>
+        <small *ngIf="invalidInput" id="errorMessage">
+            Please enter a valid Roman numeral (I, V, X, L, C, D, M)
+        </small>
     </form>
     <hr>
     <div class="cards">
         <div class="card" *ngFor="let num of nums; index as i">
+            <button (click)="removeCard(i)">X</button>
             <h3>Roman: <strong>{{num.input}}</strong></h3>
             <h3>Decimal: <strong>{{num.output}}</strong></h3>
         </div>

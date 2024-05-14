@@ -9,7 +9,7 @@ import { NgForm, Validators } from '@angular/forms';
 export class ConversionComponent {
     invalidInput: boolean = false;
     romanNum: string = '';
-    nums: { input: string; output: number }[] = [{input: 'XV', output: 15},{input: 'XV', output: 15},{input: 'XV', output: 15},{input: 'XV', output: 15},{input: 'XV', output: 15}];
+    nums: { input: string; output: number }[] = [];
 
     onSubmit(form: NgForm) {
         const romanInput = form.controls['roman'].value;
@@ -26,6 +26,10 @@ export class ConversionComponent {
 
     isValidRoman(roman: string): boolean {
         return /^[IVXLCDM]*$/.test(roman);
+    }
+
+    removeCard(index: number){
+        this.nums.splice(index,1);
     }
 
 }
