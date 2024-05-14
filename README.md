@@ -2,6 +2,8 @@
 
 This Angular project allows users to convert Roman numerals to decimal numbers. It provides a simple user interface where users can input a Roman numeral, and the app will convert it to its corresponding decimal value. The app also keeps track of previous conversions in a list.
 
+You can see a live preview of the app [here](https://roman-converter-mauve.vercel.app/).
+
 ### Features:
 - **Conversion Form:** Users can input a Roman numeral in a text field and submit it for conversion.
 - **Validation:** The app validates the input to ensure it contains only valid Roman numeral characters (I, V, X, L, C, D, M).
